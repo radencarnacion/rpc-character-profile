@@ -3,19 +3,54 @@
  <link rel="preconnect" href="https://fonts.gstatic.com">
  <link href="https://fonts.googleapis.com/css2?family=Marck+Script&display=swap" rel="stylesheet">
  <title>Janus Typhon, Arcane Investigator</title>
+
+ <!-- CSS -->
+ <style>
+  * {
+    width: auto;
+    height: auto;
+    margin: auto;
+  }
+
+  .actual {
+    text-align: right;
+  }
+
+  #character-image {
+    width: 30%;
+    height: 70%;
+    border-radius: 50%;
+
+  }
+
+  #nameplate {
+   font-face: 'Marck Script', cursive;
+  }
+
+  #titleplate {
+   font-face: 'Marck Script', cursive;
+   text-align: right;
+  }
+
+</style>
 </head>
 <body>
+
+  <!-- Character Sheet Grid -->
   <div id="character-block" class="character-block-container">
-    <div id="nameplate">
-      <h1 id="name">Janus Typhon</h1>
+
+    <!-- Header -->
+    <div class="nameplate">
+      <h1>Janus Typhon</h1>
     </div>
-    <div id="character-image">
+
+    <!-- Character Image -->
+    <div class="character-image">
       <img id="avatar" alt="Janus Typhon, Arcane Investigator" src="https://imgur.com/igXEXWN.jpg">
     </div>
 
-    <!-- Basic Character Info -->
-
-    <div id="basic-info">
+    <!-- Basic Character Info Sub-grid -->
+    <div id="basic-info" class="basic-info-grid">
       <div class="info">Name:</div><div class="actual">Janus Typhon</div>
       <div class="info">Age:</div><div class="actual">29</div>
       <div class="info">Sex:</div><div class="actual">Male</div>
@@ -29,7 +64,6 @@
     </div>
 
     <!-- D&D Stats -->
-
     <div id="dnd-stats" class="stat-grid">
       <div class="statvalue">+0</div> <!-- Initiative -->
       <div class="statvalue">10</div> <!-- Armor Class -->
@@ -58,7 +92,6 @@
     </div>
 
     <!-- Saves and Skills -->
-
     <div id="saves-skills-stats" class="saves-skills-grid">
       <h3>Saves</h3>
       <div class="statvalue">+5</div>
@@ -86,7 +119,6 @@
     </div>
 
     <!-- Spells -->
-
     <div id="spells-list" class="spells-list-grid">
       <h3>Spellbook</h3>
       <div class="fluff">With pages meticulously margined and sized, Janus' hardbound, navy blue spellbook is filled with diagrams, charts and case studies, making it read more like an scholar's dissertation as opposed to a personal collection of writings. The one quirk of this book is that <i>all</i> of the text is written in Celestial, despite the arcane formulae adhering to the standing academic theory. Quizzically, the symbol of Savras, the God of Divination and Fate, is engraved on the bottom-left corner of the back cover like a publisher's mark.</div>
@@ -99,7 +131,6 @@
     </div>
 
     <!-- Background -->
-
     <div id="Background" class="background-grid">
       <h2>Background</h2>
       <div class="fluff">Coming from a historied lineage of mages, Janus Typhon was immediately thrust into the world of nobility, politics and high society in his youth. Alas, gifted with keen insight, all the pomp and glamor of the wealthy did nothing more than to make him disdain the seemingly natural ability of people to lie, cheat and stab even while bearing the most sincere-looking smile and the sweetest tone of voice one could possibly muster. Rejecting the unspoken rules of nobility, Janus decided to focus his scholarship towards the pursuit of absolute truth: that nothing was to be taken at face value unless it could be proven to be absolutely true. Feigning a gluttonous appetite for arcane knowledge like mages that came before him, Janus convinced his family to let him embark on a venture of discovery, allowing him to meet like-minded folks who could at least sympathize, if not understand, his unending search for truth. Spending years under the tutelage of many sages of their craft, whether magic or mundane, the man began to understand the underpinnings of both the natural and the arcane world. Collecting aged wisdom, Janus eventually found patterns were none sought to look. Old wives' tales became common sense. Common sense became theories. Theories became axioms. Eventually, the man had unlocked foresight beyond the celestial: the ability to predict the immediate future not because of divine intervention, but because of the cycles of mortal history. Once he deemed himself well-prepared, he brought his theses to the attention of the same scholars who had lectured him in his adulthood. While many were skeptical, none were outright dismissive because of their personal experiences with the Janus' years-long quest for truth. Granted a chance to present his findings to the Guild of Mages as a condition of his acceptance, he nonetheless proved his sagacity when he outright solved the murder of one of his would-be judges, proving with logic, investigative tools, modern interrogation methods, and arcane theory that it was one of the other judges listening to his speil <i>at that very moment</i> that was the mastermind behind the killing. Impressed with his fortright use of his knowledge, he was one day visited by none other than an apparition of Savras, the patron god of investigators. In true Janus fashion, the mage questioned the god's very existence, dragging the deity into an hours-long scholarly debate that ultimately resulted in Janus being convinced to satisfaction that Savras was a real divine being. Amused, the god blessed the mage and marked the man as his own, coverting the wizard's dissertation into what was essentially a holy scripture of facts, figures and formulae.
@@ -107,8 +138,10 @@
       Nowadays, the man still roams the continents seeking wisdom and truth, though he moves around a lot less frequently due to his duties and responsibilities as a noble member of magecraft. But in whichever city or town he resides, the locals know that if they seek information, guidance, or the unraveling of a mystery, they simply need to seek out Janus Typhon, the Arcane Investigator.
       </div>
     </div>
-    <div id="titleplate">
-      <h1 id="title">Arcane Investigator</h1>
+
+    <!-- Footer -->
+    <div id="footer">
+      <h1>Arcane Investigator</h1>
     </div>
   </div>
 </body>

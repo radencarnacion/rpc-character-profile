@@ -1,0 +1,134 @@
+<head>
+  <title>Grids</title>
+  <style>
+    <style>
+
+* {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: black;
+}
+
+.foundation {
+  margin: auto;
+  display: grid;
+  grid-template-columns: 2fr 4fr;
+  grid-template-rows: 1fr 1fr 3fr 1fr;
+  grid-gap: 10px;
+  background-image: url('https://i.imgur.com/Pr7cnB3.jpg');
+  background-repeat: no-repeat;
+  background-color: black;
+}
+
+.header {
+  background-color: red;
+  grid-column: 2 / 6;
+  grid-row: 1 / 2;
+}
+
+.image {
+  background-color: ;
+  grid-column: 1 / 2;
+  grid-row: 1 / 6;
+  object-position: 50% 50%;
+  object-fit: scale-down;
+}
+
+.menu {
+  background-color: cyan;
+  grid-column: 2/ 6;
+  grid-row: 2 / 3;
+}
+
+.text {
+  background-color: pink;
+  grid-column: 2 / 6;
+  grid-row: 3 / 5;
+}
+
+.footer {
+  background-color: magenta;
+  grid-column: 2 / 6;
+  grid-row: 5 / 6;
+}
+
+.textsub {
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+}
+
+.box1, .box2, .box3, .box4, .box5, .box6 {
+  margin: auto;
+  padding: 0.75em;
+  border: 2px dotted black;
+  border-radius: 10px;
+  text-align: center;
+  background-color: white;
+}
+
+.oval1, .oval2, .oval3, .oval4, .oval5, .oval6 {
+  height: 1em;
+  width: 1em;
+  margin: -2px auto 4px auto;
+  padding: 0.1em;
+  border: 1px solid black;
+  border-radius: 50%;
+  text-align: center;
+  background-color: white;
+}
+
+.text1, .text2, .text3, .text4, .text5, .text6 {
+  height: 1em;
+  width: 2em;
+  margin: -2px auto auto auto;
+  border: 1px solid black;
+  border-radius: 10px;
+  text-align: center;
+  background-color: white;
+}
+
+.avatar {
+  border-radius: 50%;
+  box-shadow: 2px 2px 5px #4d4dff, -2px -2px 5px #4d4dff;
+}
+</style>
+</head>
+<body>
+  <div class="foundation">
+    <div class="header"><h1>Header<h1></div>
+    <div class="image"><img class="avatar" alt="Janus Typhon, Arcane Investigator" src="https://i.imgur.com/igXEXWN.jpg?1"></div>
+    <div class="menu"><h1>Menu<h1></div>
+      <div class="text"><br>
+
+        <!-- Sub grid -->
+        <div class="textsub">
+          <div class="box1">-1</div>
+          <div class="box2">+0</div>
+          <div class="box3">+1</div>
+          <div class="box4">+3</div>
+          <div class="box5">+2</div>
+          <div class="box6">+2</div>
+          <div class="oval1">08</div>
+          <div class="oval2">10</div>
+          <div class="oval3">12</div>
+          <div class="oval4">16</div>
+          <div class="oval5">14</div>
+          <div class="oval6">14</div>
+          <div class="text1">STR</div>
+          <div class="text2">DEX</div>
+          <div class="text3">CON</div>
+          <div class="text4">INT</div>
+          <div class="text5">WIS</div>
+          <div class="text6">CHA</div>
+      </div>
+      <h1>Text<h1>
+     </div>
+    <div class="footer"><h1>Footer</h1></div>
+  </div>
+</body>

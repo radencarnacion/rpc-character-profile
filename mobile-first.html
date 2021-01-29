@@ -1,0 +1,190 @@
+<head>
+  <meta charset="UTF-8">
+  <title>Janus Typhon, Arcane Investigator</title>
+  <style>
+  @import url('https://fonts.googleapis.com/css2?family=Marck+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Allan:wght@700&display=swap');
+
+  * {
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+  }
+
+  body {
+    color: white;
+    background-color: black;
+  }
+
+  a:link {
+    color: #1878c8;
+  }
+
+  .profile-flex {
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+  }
+
+  .header, .footer {
+    font-family: 'Marck Script', cursive;
+    font-size: 4vh;
+    text-align: center;
+  }
+
+  .ability-scores {
+    display: inline-flex;
+    flex-direction: row;
+    background-color: rgb(14, 120, 200, 0.5);
+    border-radius: 10px;
+    max-width: 768px;
+    margin: auto;
+  }
+
+  .stat-box {
+    display: flex;
+    flex-direction: column;
+    color: #1878c8;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .char-image {
+    background-color: black;
+    justify-content: center;
+    align-items: center;
+  }
+
+  [class^="box"] {
+    font-family: Allan, Helvetica, serif;
+    border-radius: 1em;
+    margin: 3px;
+    background-color: white;
+    width: 96%;
+    padding: 2px 0;
+  }
+
+  [class^="oval"] {
+    font-family: Allan, Helvetica, serif;
+  }
+
+  [class^="text"] {
+    font-family: Allan, Helvetica, serif;
+    border-radius: 1em;
+    margin: 3px;
+    background-color: white;
+    width: 96%;
+    padding: 2px 0;
+  }
+
+  .fluff {
+    display: flex;
+    flex-direction: column;
+    font-family: Helvetica, serif;
+    text-align: center;
+    height: 98%;
+    overflow-x: hidden;
+  }
+
+  .avatar {
+    box-shadow: 2px 2px 5px #1878c8, -2px -2px 5px #1878c8;
+    border-radius: 50%;
+    max-width: 320px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .attribution {
+    text-align: right;
+    font-weight: italics;
+    font-size: 10px;
+  }
+
+  .actual {
+    font-family: Arial, Helvetica, serif;
+    font-size: 12px;
+  }
+
+  .quote {
+    font-family: Allan, Helvetica, serif;
+    font-size: 20px;
+  }
+  </style>
+</head>
+
+<body>
+  <div class="profile-flex">
+    <!-- Header -->
+    <div class="header"><h1>Janus Typhon</h1></div>
+
+    <!-- Ability Scores -->
+    <div class="ability-scores">
+
+      <!-- STR -->
+      <div class="stat-box">
+        <div class="box1">-1</div>
+        <div class="oval1">08</div>
+        <div class="text1">STR</div>
+      </div>
+
+      <!-- DEX -->
+      <div class="stat-box">
+        <div class="box2">+0</div>
+        <div class="oval2">10</div>
+        <div class="text2">DEX</div>
+      </div>
+
+      <!-- CON -->
+      <div class="stat-box">
+        <div class="box3">+1</div>
+        <div class="oval3">12</div>
+        <div class="text3">CON</div>
+      </div>
+
+      <!-- INT -->
+      <div class="stat-box">
+        <div class="box4">+3</div>
+        <div class="oval4">16</div>
+        <div class="text4">INT</div>
+      </div>
+
+      <!-- WIS -->
+      <div class="stat-box">
+        <div class="box5">+2</div>
+        <div class="oval5">14</div>
+        <div class="text5">WIS</div>
+      </div>
+
+      <!-- CHA -->
+      <div class="stat-box">
+        <div class="box6">+2</div>
+        <div class="oval6">14</div>
+        <div class="text6">CHA</div>
+      </div>
+    </div>
+
+    <!-- Character Image -->
+    <div class="char-image"><img class="avatar" alt="Janus Typhon, Arcane Investigator" src="https://imgur.com/VgIZdGX.jpg">
+    </div>
+
+    <!-- Fluff -->
+    <div class="fluff">
+      <div class="actual">Janus Typhon</div>
+      <div class="actual">Human Male Wizard</div>
+      <div class="actual">29 yrs. old, 5'11" (180.3cm), 158 lbs. (72.12kg)</div>
+      <div class="actual">Common, Dwarvish, Elvish</div>
+      <div class="actual">Heterosexual/Straight</div>
+      <div class="quote">"People lie. Evidence can be forged. The Weave is Truth."</div>
+    </div>
+
+    <!-- Footer -->
+    <div class="footer"><h2>Arcane Investigator</h2></div>
+    <div class="attribution">Character Concept and Profile Code by <a href="./profile?=Tenchi%20Tanaka">Tenchi Tanaka</a>.</br>
+    Character art is borrowed and copyrights remains with original artist.</div>
+  </div>
+</body>

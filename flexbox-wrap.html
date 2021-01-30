@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Flexbox Wrap</title>
+</head>
+
+<style>
+
+  * {
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+  }
+
+  body {
+    background-color: white;
+    font-family: Arial, Helvetica, serif;
+  }
+
+  .flexbox-main {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+
+  .header {
+    font-family: Arial, Helvetica, serif;
+  }
+
+  .flexbox-abilities {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+
+</style>
+<body>
+  <div class="flexbox-main">
+
+    <!-- Name. Vertical text on horizontal screen -->
+    <div class="header">Name</div>
+
+    <!-- Character Image. Widescreen on horizontal screen -->
+    <div class="character-image">
+      <img src="" alt="">
+    </div>
+
+    <!-- Ability Scores. Column on horizontal screen. 3x2 rows on vertical. -->
+    <div class="flexbox-abilities">
+
+      <!-- STR -->
+      <div class="modifier">+0</div>
+      <div class="base-score">10</div>
+      <div class="ability-text">STR</div>
+
+      <!-- DEX -->
+      <div class="modifier">+0</div>
+      <div class="base-score">10</div>
+      <div class="ability-text">DEX</div>
+
+      <!-- CON -->
+      <div class="modifier">+0</div>
+      <div class="base-score">10</div>
+      <div class="ability-text">CON</div>
+
+      <!-- INT -->
+      <div class="modifier">+0</div>
+      <div class="base-score">10</div>
+      <div class="ability-text">INT</div>
+
+      <!-- WIS -->
+      <div class="modifier">+0</div>
+      <div class="base-score">10</div>
+      <div class="ability-text">WIS</div>
+
+      <!-- CHA -->
+      <div class="modifier">+0</div>
+      <div class="base-score">10</div>
+      <div class="ability-text">CHA</div>
+    </div>
+
+    <!-- Basic Scores. Initiative, Armor Class, Speed. Always row. -->
+    <div class="derived-scores">
+      <div class="initiative">+0</div>
+      <div class="score-text">INIT</div>
+      <div class="armor-class">10</div>
+      <div class="score-text">AC</div>
+      <div class="speed">30</div>
+      <div class="score-text">SPD</div>
+    </div>
+
+    <!-- Passive Senses. Perception, Investigation, Insight -->
+    <div class="passive-senses">
+      <div class="perception">10</div>
+      <div class="score-text">Perception</div>
+      <div class="investigation">10</div>
+      <div class="score-text">Investigation</div>
+      <div class="insight">10</div>
+      <div class="score-text">Insight</div>
+    </div>
+
+    <!-- Skills. Row on horizontal screen. 2x2 Column on vertical. -->
+    <div class="skills">
+      <!-- Skills with Proficiency have the "proficient" class together with skill-item as shown below-->
+      <div class="skill-item proficient">(DEX) Acrobatics</div><div class="modifier">+0</div>
+      <div class="skill-item">(WIS) Animal Handling</div><div class="modifier">+0</div>
+      <div class="skill-item">(INT) Arcana</div><div class="modifier">+0</div>
+      <div class="skill-item">(STR) Athletics</div><div class="modifier">+0</div>
+      <div class="skill-item">(CHA) Deception</div><div class="modifier">+0</div>
+      <div class="skill-item">(INT) History</div><div class="modifier">+0</div>
+      <div class="skill-item">(WIS) Insight</div><div class="modifier">+0</div>
+      <div class="skill-item">(CHA) Intimidation</div><div class="modifier">+0</div>
+      <div class="skill-item">(INT) Investigation</div><div class="modifier">+0</div>
+      <div class="skill-item">(WIS) Medicine</div><div class="modifier">+0</div>
+      <div class="skill-item">(INT) Nature</div><div class="modifier">+0</div>
+      <div class="skill-item">(WIS) Perception</div><div class="modifier">+0</div>
+      <div class="skill-item">(CHA) Performance</div><div class="modifier">+0</div>
+      <div class="skill-item">(CHA) Persuasion</div><div class="modifier">+0</div>
+      <div class="skill-item">(INT) Religion</div><div class="modifier">+0</div>
+      <div class="skill-item">(DEX) Sleight of Hand</div><div class="modifier">+0</div>
+      <div class="skill-item">(INT) Stealth</div><div class="modifier">+0</div>
+      <div class="skill-item">(WIS) Survival</div><div class="modifier">+0</div>
+    </div>
+  </div>
+</body>
+</html>

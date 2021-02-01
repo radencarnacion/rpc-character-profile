@@ -11,19 +11,50 @@
   }
 
   .flex-container {
-    width: 300px;
-    height: 300px;
     display: flex;
+    flex-direction: column;
     flex-wrap: wrap;
+    max-height: 500px;
+  }
+
+  .flex-container > div {
+    width: 300px;
+    height: 250px;
   }
 
   .box1 {
-    background-color: dodgeblue;
+    background-color: blue;
     color: white;
+    height: auto;
   }
 
   .box2 {
     background-color: pink;
+    color: white;
+  }
+
+  .box3 {
+    background-color: cyan;
+    color: white;
+  }
+
+  .box4 {
+    background-color: olive;
+    color: white;
+  }
+
+  .box5 {
+    background-color: green;
+    color: white;
+  }
+
+  .box6 {
+    background-color: dodgerblue;
+    color: white;
+  }
+
+  .box7 {
+    background-color: black;
     color: white;
   }
 </style>
@@ -31,7 +62,12 @@
 
 <body>
   <main class="flex-container">
-    <div class="box1">Box 1</div>
-    <div class="box2">Box 2</div>
+    <div class="box1">Header</div>
+    <div class="box2">Image</div>
+    <div class="box3">Abilities</div>
+    <div class="box4">Derived Stats</div>
+    <div class="box5">Passive Senses</div>
+    <div class="box6">Skills</div>
+    <div class="box7">Fluff</div>
   </main>
 </body>
